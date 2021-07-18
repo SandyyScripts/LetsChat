@@ -1,13 +1,13 @@
 .app {
 	display: grid;
 	place-items: center;
-	background-color: aqua;
+	background-color: #090E11;
 	height: 100vh;
 }
 
 .app__body {
 	display: flex;
-	background-color: red;
+	background-color: #2A2F32;
   margin-top: -50px;
 	height: 90vh;
 	width: 90vw;
