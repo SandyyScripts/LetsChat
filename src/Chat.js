@@ -15,6 +15,7 @@ function Chat() {
 	const { roomId } = useParams();
 	const [roomName, setRoomName] = useState("");
 	const [messages, setMessages] = useState([]);
+	// eslint-disable-next-line
 	const [{ user }, dispatch] = useStateValue();
 
 	useEffect(() => {
@@ -55,13 +56,12 @@ function Chat() {
 				<Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
 				<div className="chat__headerInfo">
 					<h3>{roomName}</h3>
-					<p className='chat-room-last-seen'>
-                        Last seen {" "}
-                        {new Date(
-                            messages[messages.length - 1]?.
-                            timestamp?.toDate()
-                        ).toUTCString()}
-                    </p>
+					<p className="chat-room-last-seen">
+						Last seen{" "}
+						{new Date(
+							messages[messages.length - 1]?.timestamp?.toDate()
+						).toUTCString()}
+					</p>
 				</div>
 				<div className="chat__headerRight">
 					<IconButton>
@@ -79,7 +79,7 @@ function Chat() {
 				{messages.map((message) => (
 					<p
 						className={`chat__message ${
-							message.name == user.displayName && "chat__receiver"
+							message.name === user.displayName && "chat__receiver"
 						}`}
 					>
 						<span className="chat__name">{message.name}</span>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Sidebar from "./Sidebar";
 import Chat from "./Chat";
@@ -6,6 +6,7 @@ import Login from "./Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 function App() {
+	// eslint-disable-next-line 
 	const [{ user }, dispatch] = useStateValue();
 	return (
 		<div className="app">
