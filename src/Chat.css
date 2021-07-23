@@ -8,7 +8,7 @@
 	padding: 20px;
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid lightgray;
+	/* border-bottom: 1px solid lightgray; */
 }
 
 .chat__headerInfo {
@@ -61,12 +61,12 @@
 .chat__body {
 	flex: 1;
 	background-image: url("https://2.bp.blogspot.com/-_qLSewKRhQY/XCN6fe80mfI/AAAAAAAAt6I/Wuw-dNMfroAfgvui1iHZmQ0eLXwzM6M_ACLcBGAs/s1600/whatsapp%2Bwallpaper%2B%252839%2529.jpg");
-	/* margin-left: -20px; */
+	margin-left: -20px;
 	background-repeat: repeat;
 	background-position: center;
 	padding: 30px;
 	overflow: scroll;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .chat__footer {
@@ -74,7 +74,7 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 62px;
-	border-top: 1px solid lightgray;
+	/* border-top: 1px solid lightgray; */
 }
 .chat__footer > form {
 	flex: 1;
@@ -95,4 +95,8 @@
 .chat__footer > .MuiSvgIcon-root {
 	padding: 10px;
 	color: gray;
+}
+.chat-room-last-seen{
+    margin: 0;
+	font-size: xx-small;
 }
